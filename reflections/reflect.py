@@ -15,11 +15,11 @@ def default_extractor(target):
         # Iterate modules
         if is_package:
             # If package, append and search deeper
-            _resources.append((loader, name))
+            _resources.append((loader, name, is_package))
             default_extractor(loader.find_module(name).load_module(name))
         else:
             # If module, append
-            _resources.append((loader, name))
+            _resources.append((loader, name, is_package))
 
 
 def module_extractor(target):
