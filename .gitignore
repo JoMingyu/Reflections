@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+reflections/.idea/misc.xml
+reflections/.idea/modules.xml
+reflections/.idea/workspace.xml
+reflections/.idea/reflections.iml
